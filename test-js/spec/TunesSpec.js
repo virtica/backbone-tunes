@@ -42,3 +42,18 @@ describe("Album", function () {
     });
 
 });
+ describe("Playlist", function(){
+
+    beforeEach(function() {
+        this.Playlist = new Playlist();
+        this.playlist.add(albumData[0[]);
+    });
+
+    it("identifies first album as first", function(){
+        expect(this.playlist.isFirstAlbum(0)).toBeTruthy();
+    });
+
+    it("identifies non-first album as first", function(){
+        expect(this.playlist.isFirstAlbum(1)).toBeFalsy();
+    });
+ })
